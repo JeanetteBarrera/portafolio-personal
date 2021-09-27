@@ -1,0 +1,129 @@
+.container_initial {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid: 1fr 1fr 3fr / repeat(4, 1fr);
+    grid-template-areas: 
+    '. . . .'
+    'title title title title'
+    'animation animation animation animation'
+    'animation animation animation animation'
+    ;
+    background-color: white;
+    
+}
+.container_initial .initial{
+    grid-area: title;
+    margin: 0 auto;
+    width: 90%;
+}
+.container_initial .container_animation {
+    grid-area: animation;
+}
+.container_initial .initial h2{
+    font-family: 'Space Mono', monospace;
+    font-weight: 500;
+    font-size: 17px;
+    color: rgb(139, 137, 137);
+}
+.container_initial .initial h1 {
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    font-size: 35px;
+    text-align: right;
+    -webkit-text-stroke:1px rgb(243, 243, 243);
+    -webkit-text-fill-color:rgb(255, 255, 255);;
+    /*color:#6D5C7C;*/
+    text-shadow:black 0 4px 8px;
+}
+.container_initial .initial span {
+    display: block;
+
+}
+.container_initial .initial p {
+    text-align: center;
+    color: rgb(139, 137, 137);
+    font-weight: 500;
+    font-size: 17px;
+    font-family: 'Space Mono', monospace;
+}
+/* VERSION PANTALLAS MINIMO DE 456px*/
+
+@media screen and (min-width: 456px){
+    .container_initial .initial h2{
+        font-size: 18px;
+    }
+    .container_initial .initial h1 {
+        font-size: 38px;
+    }
+    .container_initial .initial p {
+        font-size: 18px;
+    }
+    .container_initial .initial {
+        width: 78%;
+    }
+    
+}
+/*VERSION PANTALLAS MINIMO DE 744px*/
+@media screen and (min-width: 600px){
+    .container_initial .initial {
+        width: 65%;
+    }
+}
+@media screen and (min-width: 740px){
+    .container_initial .initial h2{
+        font-size: 23px;
+    }
+    .container_initial .initial h1 {
+        font-size: 50px;
+    }
+    .container_initial .initial p {
+        font-size: 23px;
+    }
+    .container_initial .initial {
+        width: 75%;
+    }
+}
+@media screen and (min-width: 1023px){
+    .container_initial {
+        grid-template-areas: 
+        '. . animation animation '
+        'title title animation animation'
+        'title title animation animation'
+        'title title animation animation';
+    }
+    .container_initial .initial h2{
+        font-size: 28px;
+    }
+    .container_initial .initial h1 {
+        font-size: 60px;
+    }
+    .container_initial .initial p {
+        font-size: 28px;
+    }
+    
+}
+@media screen and (min-width: 1200px){
+    .container_initial {
+        grid-template-areas: 
+        '. . . . '
+        'title title animation animation'
+        'title title animation animation'
+        'title title animation animation';
+    }
+    .container_initial .initial h2{
+        font-size: 27px;
+    }
+    .container_initial .initial h1 {
+        font-size: 60px;
+    }
+    .container_initial .initial p {
+        font-size: 27px;
+    }
+    
+}
+@media screen and (min-width: 1400px){
+    .container_initial .initial h1 {
+        font-size: 70px;
+    }
+}
